@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5301125567.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type= "module" src="./js/index.js" defer></script>
+
+    <title>Windows 7</title>
+  </head>
+  <body>
+    <main>
+
+<!--DESKTOP-->
+      <section class="desktop">
+        <div class="desktop__application desktop__application--my-documents">
+          <!--my-documents-->
+          <img class="desktop__application__img" src="./images/folder.png">
+          <p class="desktop__application__label">My Documents</p>
+        </div>
+        <!--my-pictures-->
+        <div class="desktop__application desktop__application--my-pictures">
+          <img class="desktop__application__img" src="./images/my-pictures-folder.png">
+          <p class="desktop__application__label">My Pictures</p>
+        </div>
+        <!--Notepad-->
+         <div class="desktop__application desktop__application--notepad">
+          <img class="desktop__application__img" src="./images/notepad.webp">
+          <p class="desktop__application__label">Notepad</p>
+        </div>
+      </section>
+<!--WINDOWS-->
+      <!--my-documents-->
+      <section class="window window--my-documents window--hidden">
+        <div class="window__title-bar">
+          <div class="window__title-bar__title">
+            <img class="window__title-bar__title__img" src="./images/folder.png"></img>
+            <p class="window__title-bar__title__text">My Documents</p>
+          </div>
+          <button
+            class="window__title-bar__button window__title-bar__button--close"
+          ></button>
+        </div>
+        <div class="window__items">
+        </div>
+      </section>
+      <!--my-pictures-->
+      <section class="window window--my-pictures window--hidden">
+        <div class="window__title-bar">
+          <div class="window__title-bar__title">
+            <img class="window__title-bar__title__img" src="./images/my-pictures-folder.png"></img>
+            <p class="window__title-bar__title__text">My Pictures </p>
+          </div>
+          <button
+            class="window__title-bar__button window__title-bar__button--close"
+          ></button>
+          </div>
+          <div class="window__items">
+          </div>
+      </section>
+      <!--notepad-->
+      <section class="window window--notepad window--hidden">
+        <div class="window__title-bar">
+          <div class="window__title-bar__title">
+            <img class="window__title-bar__title__img" src="./images/notepad.webp"></img>
+            <p class="window__title-bar__title__text">Notepad</p>
+          </div>
+          <button
+            class="window__title-bar__button window__title-bar__button--close"
+          ></button>
+        </div>
+        <div class="window__content">
+          <div class="window__content__title-bar">
+            <p class="window__content__title-bar__option">File</p>
+            <p class="window__content__title-bar__option">Edit</p>
+            <p class="window__content__title-bar__option">Format</p>
+            <p class="window__content__title-bar__option">View</p>
+            <p class="window__content__title-bar__option">Help</p>
+          </div>
+            <textarea class="window__content__text-input"></textarea>
+
+
+      </section>
+<!--TOOLBAR-->
+      <section class="toolbar">
+        <button class="toolbar__start-btn">
+          <img
+            class="toolbar__start-btn__icon"
+            src="./images/windows-icon.png"
+          />
+          <p class="toolbar__start-btn__text">start</p>
+        </button>
+        <div class="toolbar__clock">
+         
+        </div>
+      </section>
+
+<!--START MENU-->
+      <section class="start-menu start-menu--hidden">
+        <div class="start-menu__user-info">
+          <img class="start-menu__user-info__profile-pic" src="./images/chess.jpeg">
+          <p class="start-menu__user-info__profile-name">
+            Joanne
+          </p>
+        </div>
+        <div class="start-menu__wrapper">
+          <div class="start-menu__programs">
+            <div class="start-menu__program start-menu--notepad">
+              <img
+                class="start-menu__program__img"
+                src="./images/notepad.webp"
+              />
+              <p class="start-menu__program__text">Notepad</p>
+            </div>
+          </div>
+          <div class="start-menu__folders">
+            <div class="start-menu__folder start-menu--my-documents">
+              <img src="./images/folder.png" class="start-menu__folder__img" />
+              <p class="start-menu__folder__text">My Documents</p>
+            </div>
+            <div class="start-menu__folder start-menu--my-pictures">
+              <img src="./images/my-pictures-folder.png" class="start-menu__folder__img" />
+              <p class="start-menu__folder__text">My Pictures</p>
+            </div>
+          </div>
+        </div>
+        <div class="start-menu__buttons">
+          <div class="start-menu__button start-menu__button--yellow">
+            <i class="fa fa-regular fa-key"></i>
+          </div>
+          <p class="start-menu__button-label">Log Off</p>
+          <div class="start-menu__button start-menu__button--orange">
+            <i class="fa fa-solid fa-power-off"></i>
+          </div>
+          <p class="start-menu__button-label">Turn Off Computer</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
