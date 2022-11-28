@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main {
+  background-image: url("../images/hills.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+@import "./desktop.scss";
+@import "./windows.scss";
+@import "./toolbar.scss";
+@import "./start-menu.scss";
